@@ -691,3 +691,52 @@ footer p {
   margin: 0;
   font-weight: 400;
 }
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.app {
+  background-color: lightblue;
+  height: 100vh;
+  width: 100vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: intro 2s ease-in-out;
+  padding: 10px;
+  opacity: 25%;
+  transition: 0.2s ease-out;
+  box-shadow: 5px 5px black, -5px -5px black;
+}
+@keyframes intro {
+  0% {
+    opacity: 0;
+    color: lightblue;
+  }
+  25% {
+    width: 200px;
+    opacity: 1;
+    border-radius: 30px;
+    box-shadow: -10px -10px black, 10px 10px black;
+    color: lightblue;
+  }
+  50% {
+    height: 150px;
+    width: 400px;
+    opacity: 1;
+    color: lightblue;
+    box-shadow: 10px 10px black, -10px -10px black;
+  } 
+  100% {
+    color: black;
+    opacity: 25%;
+    width: 300px;
+    box-shadow: 5px 5px black, -5px -5px black;
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+  }
+}
